@@ -7,12 +7,12 @@ MySQL 数据库备份 shell 脚本
 - [x] 按照日期打包压缩 tar.gz
 
 ## 使用说明
-1. 克隆仓库
+1. 克隆仓库  
  `git clone git@github.com:gonglihai/DatabaseBackup.git`
-2. 切换到本地目录
+2. 切换到本地目录  
  `cd ./DatabaseBackup`
 3. 修改配置
-`vi run.sh`
+`vi run.sh`  
  配置说明
  ``` shell
 # 数据库用户名
