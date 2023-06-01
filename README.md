@@ -15,7 +15,7 @@ MySQL 数据库备份 shell 脚本
 `vi run.sh`  
 4. 添加执行权限  
 `chmod +x ./run.sh`
-5. 执行
+5. 执行  
 `./run.sh`
 
 ## 配置说明
