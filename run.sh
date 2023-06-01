@@ -1,17 +1,25 @@
 #!/bin/bash
 
+# 数据库用户名
+database_user="root"
+# 数据库密码
+database_password="you_password"
+# 备份到文件夹
+backup_dir="/root/home/database/backup"
+# 数据库库名数组
+databases=("xxx_database1" "xxx_database2" "xxx_database3")
+# 可执行文件路径
+mysqldump_path="/usr/bin"
 
-database_user="root"                          # database username, 数据库用户名
-database_password="you_password"              # database password, 数据库密码
-backup_dir="/root/home/database/backup"       # backup dir, 备份到文件夹
-databases=("prod_mybox" "prod_auto_download") # database names array,数据库库名数组
-mysqldump_path="/usr/bin"                     # mysqldump path, mysqldump 可执行文件路径
+
 
 
 function log() {
   now_time="$(date "+%Y-%m-%d %H:%M:%S")"
   echo "######### $now_time $*" 
 }
+
+
 
 now="$(date +%Y%m%d%H%M%S)"
 dir="$backup_dir/$now"
