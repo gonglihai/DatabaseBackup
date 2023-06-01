@@ -28,7 +28,7 @@ database_password="you_password"
 backup_dir="/data/database/backup"
 # 数据库库名数组
 databases=("xxx_database1" "xxx_database2" "xxx_database3")
-# 可执行文件路径
+# mysqldump 可执行文件路径
 mysqldump_path="/usr/bin"
 ```
 
@@ -37,4 +37,8 @@ mysqldump_path="/usr/bin"
 # 每日凌晨3点备份
 0 3 * * * /data/database/run.sh
 ```
+
+## 其他
+### 查找mysqldump_path 
+`whereis mysqldump`
 
