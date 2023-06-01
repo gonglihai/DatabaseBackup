@@ -39,6 +39,6 @@ mysqldump_path="/usr/bin"
 ```
 
 ## 其他
-### 查找mysqldump_path 
+### 1. 查找 mysqldump_path 
 `whereis mysqldump`
 
