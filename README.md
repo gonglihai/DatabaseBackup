@@ -13,7 +13,7 @@ MySQL 数据库备份 shell 脚本
  `cd ./DatabaseBackup`
 3. 修改配置  
 `vi run.sh`  
- 配置说明
+ 配置说明:
  ``` shell
 # 数据库用户名
 database_user="root"
