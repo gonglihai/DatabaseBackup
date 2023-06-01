@@ -13,7 +13,12 @@ MySQL 数据库备份 shell 脚本
  `cd ./DatabaseBackup`
 3. 修改配置  
 `vi run.sh`  
- 配置说明:
+4. 添加执行权限
+`chmod +x ./run.sh`
+5. 执行
+`./run.sh`
+
+## 配置说明
  ``` shell
 # 数据库用户名
 database_user="root"
@@ -26,10 +31,6 @@ databases=("xxx_database1" "xxx_database2" "xxx_database3")
 # 可执行文件路径
 mysqldump_path="/usr/bin"
 ```
-4. 添加执行权限
-`chmod +x ./run.sh`
-5. 执行
-`./run.sh`
 
 ## crontab 定时任务
 ``` shell
