@@ -11,7 +11,7 @@ MySQL 数据库备份 shell 脚本
  `git clone git@github.com:gonglihai/DatabaseBackup.git`
 2. 切换到本地目录  
  `cd ./DatabaseBackup`
-3. 修改配置
+3. 修改配置  
 `vi run.sh`  
  配置说明
  ``` shell
