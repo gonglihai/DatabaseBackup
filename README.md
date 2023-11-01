@@ -42,3 +42,13 @@ mysqldump_path="/usr/bin"
 ### 1. 查找 mysqldump_path 
 `whereis mysqldump`
 
+### 2. 备份到阿里云盘
+[阿里云盘CLI](https://github.com/tickstep/aliyunpan/tree/main) 
+在 `./run.sh` 末尾添加
+```
+log "上传到 阿里云盘"
+
+/root/home/tools/aliyunpan/aliyunpan u $dir.tar.gz /server/backup/mysql
+
+log "上传结果: $?, 文件: /server/backup/mysql/$now.tar.gz"
+```
